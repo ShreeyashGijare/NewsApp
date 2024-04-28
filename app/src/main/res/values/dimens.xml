@@ -57,5 +57,6 @@
 
 
     <item name="three_items" format="float" type="dimen">2.5</item>
+    <dimen name="fab_margin">16dp</dimen>
 
 </resources>

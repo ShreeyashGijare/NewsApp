@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1037778660514",
+    "project_id": "moengagenotification",
+    "storage_bucket": "moengagenotification.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1037778660514:android:4871012a6cdd421b0a3bfb",
+        "android_client_info": {
+          "package_name": "com.example.taskmoengage"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC3PVIm7ps_h7SPge3WqTOi3zWpQUvvMh4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

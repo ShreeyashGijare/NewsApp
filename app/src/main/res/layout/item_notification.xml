@@ -16,7 +16,6 @@
             android:id="@+id/ivLogo"
             android:layout_width="@dimen/margin_60"
             android:layout_height="@dimen/margin_60"
-            android:src="@drawable/ic_launcher_background"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
