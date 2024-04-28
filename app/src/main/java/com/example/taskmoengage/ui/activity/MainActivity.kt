@@ -5,6 +5,7 @@ import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import android.view.View
 import android.widget.Toast
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -47,12 +48,16 @@ class MainActivity : AppCompatActivity(), NewsClickInterface {
         mBinding.btnFilter.setOnClickListener {
             viewFilterBottomSheet.show()
         }
-
+        mBinding.shimmerView.visibility = View.VISIBLE
         setObserver()
     }
 
     private fun setObserver() {
         mainViewModel._newsList.observe(this) {
+            if (!it.isNullOrEmpty()) {
+                mBinding.shimmerView.clearAnim()
+                mBinding.shimmerView.visibility = View.GONE
+            }
             setUpAdapter(it)
         }
         mainViewModel.errorData.observe(this) {

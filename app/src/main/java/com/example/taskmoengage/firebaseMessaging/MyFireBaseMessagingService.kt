@@ -40,7 +40,7 @@ class MyFireBaseMessagingService : FirebaseMessagingService() {
 
         var builder: NotificationCompat.Builder =
             NotificationCompat.Builder(applicationContext, channelId)
-                .setSmallIcon(R.drawable.news_on_the_go)
+                .setSmallIcon(R.drawable.ic_mic_icon)
                 .setAutoCancel(false)
                 .setVibrate(longArrayOf(1000, 1000, 1000, 1000))
                 .setOnlyAlertOnce(true)
@@ -66,7 +66,7 @@ class MyFireBaseMessagingService : FirebaseMessagingService() {
         val remoteView = RemoteViews("com.example.taskmoengage", R.layout.item_notification)
         remoteView.setTextViewText(R.id.tvNotificationTitle, title)
         remoteView.setTextViewText(R.id.tvNotificationDescription, message)
-        remoteView.setImageViewResource(R.id.ivLogo, R.drawable.news_on_the_go)
+        remoteView.setImageViewResource(R.id.ivLogo, R.drawable.ic_mic_icon)
 
         return remoteView
     }

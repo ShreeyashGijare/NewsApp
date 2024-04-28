@@ -11,7 +11,7 @@
         android:id="@+id/ivLogo"
         android:layout_width="@dimen/margin_100"
         android:layout_height="@dimen/margin_100"
-        android:src="@drawable/news_on_the_go"
+        android:src="@drawable/ic_mic_icon"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
